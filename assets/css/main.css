@@ -10,3 +10,11 @@ Gris oscuro letra: #ba5e49
 Gris iconos : #646464
 Rojo : #e84848
 */
+@font-face {
+    font-family: 'flexo';
+    src: url(../css/font/Flexo/Flexo-Regular.otf);
+}
+
+html {
+	font-family: 'flexo', sans-serif;
+}
