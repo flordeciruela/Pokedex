@@ -3,7 +3,7 @@
 const PokemonItem = (props) => {
   const pokemonCard = $('<div class="pokemons"></div>');
   const name = $('<h3>'+props.pokemon.pokemon_species.name+'</h3>');
-/*
+
 	const getIdImg = () => {
 	  let indexOfPokemon = props.pokemon.entry_number - 1;
 		if (indexOfPokemon < 10) {
@@ -19,8 +19,10 @@ const PokemonItem = (props) => {
 	console.log(idImg);
 	let urlOrigin = "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+idImg+".png";
 	const img = $('<img src="">');
-	*/
+	img.attr("src", urlOrigin);
+
   pokemonCard.append(name);
+	pokemonCard.append(img);
   return pokemonCard;
 }
 
