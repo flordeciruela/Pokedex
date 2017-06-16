@@ -3,6 +3,23 @@
 const PokemonItem = (props) => {
   const pokemonCard = $('<div class="pokemons"></div>');
   const name = $('<h3>'+props.pokemon.pokemon_species.name+'</h3>');
+/*
+	const getIdImg = () => {
+	  let indexOfPokemon = props.pokemon.entry_number - 1;
+		if (indexOfPokemon < 10) {
+			indexOfPokemon = "00" + indexOfPokemon;
+		} else if (indexOfPokemon < 100) {
+			indexOfPokemon = "0" + indexOfPokemon;
+		}
+		return indexOfPokemon;
+	}
+	getIdImg();
+
+	let idImg = getIdImg();
+	console.log(idImg);
+	let urlOrigin = "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+idImg+".png";
+	const img = $('<img src="">');
+	*/
   pokemonCard.append(name);
   return pokemonCard;
 }
