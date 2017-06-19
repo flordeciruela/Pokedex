@@ -1,6 +1,6 @@
 'use strict';
 
-const url = "http://pokeapi.co/api/v2/pokedex/1/";
+const url = "https://pokeapi.co/api/v2/pokedex/1/";
 const getJSON = (url, cb) => {
 
   const xhr = new XMLHttpRequest();

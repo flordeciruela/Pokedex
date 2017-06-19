@@ -35,8 +35,8 @@ $('button').on('click', (e) => {
         }
 
         let idImg = getIdImg();
-    
-        let urlOrigin = "http://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+idImg+".png";
+
+        let urlOrigin = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+idImg+".png";
         img.attr("src", urlOrigin);
 
         pokemonCard.append(figure);
