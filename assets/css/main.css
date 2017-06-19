@@ -15,6 +15,78 @@ Rojo : #e84848
     src: url(../css/font/Flexo/Flexo-Regular.otf);
 }
 
-html {
+/*text-white*/
+/*text-muted*/
+.width-100 {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+* {
 	font-family: 'flexo', sans-serif;
+}
+
+h1 {
+  color: #e84848;
+}
+
+input.form-control {
+  background-image: url('../css/icon/search.png');
+  background-size: 6%;
+  background-position: 0;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #dbdbdb;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button.btn {
+  background-color: #7aa44a;
+  color: #fff;
+  margin-top: 12px;
+  padding-top: 2px;
+  width: 50%;
+}
+
+.item.col-md-2 {
+  width:20%;
+  display: inline-block;
+  margin: 15px auto;
+}
+
+figure.col-xs-12 {
+  background-color: #edecec;
+  padding: 0;
+}
+
+figcaption {
+  background-image: url(../img/notch-collectibles.png);
+  background-position: bottom center;
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+}
+
+figcaption img {
+  width: 12px;
+  margin: 10px 5px 5px 5px;
+}
+
+@media (max-width: 767px) {
+  .item.col-xs-12 {
+    width:100%;
+  }
 }

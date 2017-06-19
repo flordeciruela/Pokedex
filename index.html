@@ -4,21 +4,27 @@
 		<meta charset="utf-8">
 		<title>Pokedex</title>
 		<link rel="shortcut icon" href="assets/css/icon/favicon.ico">
-		<link rel="stylesheet" href="assets/css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
-	<body class="container">
-		<header>
+	<body>
+		<header class="text-center">
 			<h1>Pokédex</h1>
 		</header>
-		<div class="col s5">
-			<button class="btn right">A-Z</button>
+		<div class="container">
+			<div class="form-inline">
+				<div class="input-group col-xs-8 col-md-7">
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-xs-4 col-md-2 pull-right padding-0">
+					<button class="btn pull-right btn-xs">A-Z</button>
+				</div>
+			</div>
 		</div>
 
-		<div id="root"></div>
+		<div id="root" class="container"></div>
 		<script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
-		<script src="assets/js/materialize.min.js" charset="utf-8"></script>
+		<script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
 		<script src="assets/js/get-json.js"></script>
 		<script src="assets/js/filter.js" charset="utf-8"></script>
 		<script src="assets/js/search.js" charset="utf-8"></script>

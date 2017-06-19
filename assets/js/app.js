@@ -2,7 +2,7 @@
 
 const render = (root) => {
   root.empty();
-  const wrapper = $('<div class="wrapper"></div>');
+  const wrapper = $('<div class="wrapper row"></div>');
 
   if (state.selectedPokemon == null) {
     wrapper.append(Search(_ => render(root)));
@@ -27,7 +27,7 @@ $( _ => {
 		const root = $('#root');
 		render(root);
 		//console.log(state.pokemons);  //all
-		console.log(state.pokemons[0].pokemon_species);  //one
+		//console.log(state.pokemons[0].pokemon_species);  //one
 
   });
 
