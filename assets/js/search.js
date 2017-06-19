@@ -5,7 +5,7 @@ const PokemonItem = (props) => {
   const name = $('<h3>'+props.pokemon.pokemon_species.name+'</h3>');
 
 	const getIdImg = () => {
-	  let indexOfPokemon = props.pokemon.entry_number - 1;
+	  let indexOfPokemon = props.pokemon.entry_number;
 		if (indexOfPokemon < 10) {
 			indexOfPokemon = "00" + indexOfPokemon;
 		} else if (indexOfPokemon < 100) {
