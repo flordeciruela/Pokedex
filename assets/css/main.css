@@ -37,6 +37,11 @@ h1 {
   color: #e84848;
 }
 
+header, section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 input.form-control {
   background-image: url('../css/icon/search.png');
   background-size: 6%;
